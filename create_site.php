@@ -1279,24 +1279,21 @@ Container wrapper -->
       </script>
       
       <script>
-  /*
-          var q=true;
-        $( "body" ).mouseup(function() {
-            q=false;
-            
-  });
-  $( ".selettore" ).mouseenter(function() {
-            if (q==1){
-     $(this).toggleClass('cornice2 cornice3'); 
-                };
-  })
-           $( ".selettore" ).mousedown(function() {
-            q=true;
-     $(this).toggleClass('cornice2 cornice3');   
-  });
+  
+        var IS_MOUSE_DOWN = false;
+
+        $(document).on('mouseup', () => {IS_MOUSE_DOWN = false});
+
         
-     
-      */            
+        $('.selettore').on('mouseenter mousedown', e => {
+          const eventType = e.type;
+          const $element = $(e.currentTarget);
+          // se l'evento catturato è 'mousedown' imposto la variabile isMouseDown su 'true'
+          if (eventType == 'mousedown') IS_MOUSE_DOWN = true;
+          // se isMouseDown è 'true' eseguo il cambio di classe dell'elemento
+          IS_MOUSE_DOWN && $element.toggleClass('cornice2 cornice3');
+        });
+                
       </script>
 
       
