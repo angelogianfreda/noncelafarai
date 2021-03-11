@@ -1,0 +1,54 @@
+
+
+.cornice{
+    
+    border: 2px solid red;
+    
+}
+
+
+
+
+.carousel .carousel-item {
+  height: 550px;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 550px;
+}
+
+
+
+.cornicebella{
+    display: block;
+    border: 1px solid;
+    border-color: #CCC #CCC #AAA #CCC;
+    padding: 3px;
+    background: #f6f6f6;
+    box-shadow: 10px 10px 5px grey;
+}
+.cornicebellainversa{
+    display: block;
+    border: 1px solid;
+    border-color: #CCC #CCC #AAA #CCC;
+    padding: 3px;
+    background: #f6f6f6;
+    box-shadow: -10px   10px 5px grey;
+}
+
+
+.cornice2{
+     border: 1px solid limegreen;
+    background-color: limegreen;
+    height: 40px;
+}
+
+.cornice3{
+     border: 1px solid grey;
+    height: 40px;
+    
+}
